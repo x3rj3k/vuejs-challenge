@@ -81,16 +81,4 @@ router.beforeEach( async (to, from, next) => {
   }
 })
 
-// router.beforeEach( async (to, from, next) => {
-//   const loggedIn = getCurrentUser
-//   const isAuth = to.matched.some((record) => record.meta.requiresAuth);
-
-//   if (isAuth && !loggedIn) {
-//     next({ name: "LoginPage", query: { redirect: to.fullPath }});
-//   } else if (await loggedIn) {
-//     next({ name: "HomePage", query: { redirect: to.fullPath }});
-//   }
-//   next();
-// })
-
 export default router
